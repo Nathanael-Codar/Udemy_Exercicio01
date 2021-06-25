@@ -32,6 +32,8 @@ public class Order {
 		this.status = status;
 	}
 	
-	
+	public void addItem(OrderItem item) {
+		
+	}
 	
 }
