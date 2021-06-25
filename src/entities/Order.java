@@ -1,12 +1,16 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import entities.enuns.OrderStatus;
 
 public class Order {
 	public Date moment;
 	public OrderStatus status;
+	
+	private List<OrderItem> items = new ArrayList<OrderItem>();
 	
 	public Order() {
 	}
@@ -35,5 +39,10 @@ public class Order {
 	public void addItem(OrderItem item) {
 		
 	}
+
+	public List<OrderItem> getItems() {
+		return items;
+	}
+
 	
 }
