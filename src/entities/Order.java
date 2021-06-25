@@ -7,8 +7,8 @@ import java.util.List;
 import entities.enuns.OrderStatus;
 
 public class Order {
-	public Date moment;
-	public OrderStatus status;
+	private Date moment;
+	private OrderStatus status;
 	
 	private List<OrderItem> items = new ArrayList<OrderItem>();
 	
